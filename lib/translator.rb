@@ -5,7 +5,7 @@ require "yaml"
 
 
 def load_library(path)
-  lib = {get_emoticon => {}, get_meaning => {}}
+  lib = {"get_emoticon" => {}, "get_meaning" => {}}
   
   lib
 end
