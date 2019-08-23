@@ -9,7 +9,8 @@ def load_library(path)
   lib = {"get_emoticon" => {}, "get_meaning" => {}}
   emotes.each do |meaning, emote|
     eng, jp = emote
-    lib["get_meaning"][jp]
+    lib["get_meaning"][jp] = meaning
+    lib["get_emoticon"][eng] = jp
   end
   lib
 end
